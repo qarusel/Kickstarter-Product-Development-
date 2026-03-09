@@ -1,9 +1,15 @@
-const nextConfig = {
-  output: 'export', 
-  basePath: '/Personal-project-attention-span-Yeskendir', 
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  output: 'export',
+  // Указываем название твоего текущего репозитория
+  basePath: '/Kickstarter-Product-Development-',
+  assetPrefix: '/Kickstarter-Product-Development-',
   images: {
-    unoptimized: true, 
+    unoptimized: true,
   },
+  // Это важно для корректных ссылок на страницы типа /about
+  trailingSlash: true,
 };
 
 export default nextConfig;
