@@ -1,14 +1,11 @@
 name: Deploy Next.js site to Pages
-
 on:
   push:
     branches: ["main"]
-
 permissions:
   contents: read
   pages: write
   id-token: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,10 +14,6 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
-        with:
-          bun-version: latest
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
       - name: Install dependencies
         run: bun install
       - name: Build with Next.js
@@ -29,7 +22,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
-
   deploy:
     environment:
       name: github-pages
