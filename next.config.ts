@@ -1,8 +1,11 @@
 import type { NextConfig } from "next";
+
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/Kickstarter-Product-Development-',
-  assetPrefix: '/Kickstarter-Product-Development-',
+  basePath: '/Personal-project-attention-span-Yeskendir',
+  assetPrefix: '/Personal-project-attention-span-Yeskendir',
   images: { unoptimized: true },
+  trailingSlash: true,
 };
+
 export default nextConfig;
