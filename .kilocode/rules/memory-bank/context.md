@@ -14,6 +14,7 @@ The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. I
 - [x] ESLint configuration
 - [x] Memory bank documentation
 - [x] Recipe system for common features
+- [x] NeuroDrive Kickstarter homepage — full single-page site with 6 required sections, dark neon visual identity (cyan/purple), Orbitron display font, animated gradient text, sticky navbar, hero, project description, functional requirements, technical requirements, prototype wireframes, team section, timeline, future improvements, charity note, and footer
 
 ## Current Structure
 
