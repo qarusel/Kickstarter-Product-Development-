@@ -1,14 +1,27 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  output: 'export',
-  // Замени 'Kickstarter-Product-Development-' на точное название твоего репозитория, если оно другое
-  basePath: '/Kickstarter-Product-Development-',
-  assetPrefix: '/Kickstarter-Product-Development-',
-  images: {
-    unoptimized: true,
+{
+  "name": "nextjs-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit"
   },
-  trailingSlash: true,
-};
-
-export default nextConfig;
+  "dependencies": {
+    "next": "^16.1.3",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@types/node": "^24.10.2",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@tailwindcss/postcss": "^4.1.17",
+    "tailwindcss": "^4.1.17",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "^16.0.0"
+  }
+}
