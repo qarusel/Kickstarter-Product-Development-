@@ -2,12 +2,13 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/Personal-project-attention-span-Yeskendir',
-  assetPrefix: '/Personal-project-attention-span-Yeskendir',
+  // Указываем путь к твоему репозиторию, чтобы CSS и картинки не терялись
+  basePath: '/Kickstarter-Product-Development-',
+  assetPrefix: '/Kickstarter-Product-Development-',
   images: {
     unoptimized: true,
   },
-  trailingSlash: true, // Добавь эту строку, она помогает путям на GitHub Pages
+  trailingSlash: true,
 };
 
 export default nextConfig;
