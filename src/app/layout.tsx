@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Orbitron, Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const orbitron = Orbitron({
   variable: "--font-orbitron",
@@ -26,10 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${orbitron.variable} ${inter.variable} antialiased`}
-      >
-        {children}
+      <body className={`${orbitron.variable} ${inter.variable} antialiased`}>
+        <Navbar />
+        <div className="pt-16">{children}</div>
+        <Footer />
       </body>
     </html>
   );
