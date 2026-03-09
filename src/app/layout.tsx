@@ -1,20 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Orbitron, Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const orbitron = Orbitron({
+  variable: "--font-orbitron",
   subsets: ["latin"],
+  weight: ["400", "600", "700", "900"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Next.js Template",
-  description: "A minimal Next.js starter template",
+  title: "NeuroDrive – Train Your Mind, Race Your Limits",
+  description:
+    "NeuroDrive is a 3D racing game built in Unity that improves reaction speed and concentration while delivering an exciting racing experience.",
 };
 
 export default function RootLayout({
@@ -25,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${orbitron.variable} ${inter.variable} antialiased`}
       >
         {children}
       </body>
