@@ -1,14 +1,6 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+const nextConfig = {
   output: 'export',
-  // Указываем путь к твоему репозиторию, чтобы CSS и картинки не терялись
-  basePath: '/Kickstarter-Product-Development-',
-  assetPrefix: '/Kickstarter-Product-Development-',
-  images: {
-    unoptimized: true,
-  },
-  trailingSlash: true,
+  basePath: '/Personal-project-attention-span-Yeskendir',
+  assetPrefix: '/Personal-project-attention-span-Yeskendir',
+  images: { unoptimized: true },
 };
-
-export default nextConfig;
